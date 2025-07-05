@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="about.css">
+    <title>Document</title>
+</head>
+<body>
+      <!-- Header Start -->
+      <header>
+        <div id="navbar">
+            <h1>WILD GINGER</h1>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li><a href="log.php">Sign In</a></li>
+                    <li><a href="sign up.php">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+         <!-- Menu Section Start -->
+         <section id="menu">
+            <div class="container">
+                <div class="title">
+                    <h2>Our Special Menu</h2>
+                </div>
+                <div class="menu-items">
+                    <div class="menu-items-left">
+                        <div class="menu-item">
+                            <img src="./img/food1.png" alt="LASAL Cheese">
+                            <div>
+                                <h3>LASAL CHEESE <span class="primary-text"id="price">18.00</span></h3>
+                                <p>---------------------------------------<br>---------------------------------------</p>
+                                <button , onclick="getNumbers(18),getOperator('+'),calculate()">+</button>
+                                <span v-if="product.quantity > 0",class="quantity"> </span>
+                                <button , onclick="getNumbers(18),getOperator('-'),calculate()">-</button>
+                                <a href="#confirm"><button class="update">order now</button></a>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/food3.png" alt="KOKTAIL JUCIE">
+                            <div>
+                                <h3>KOKTAIL JUCIE <span class="primary-text"id="price">12.00</span></h3>
+                                <p>---------------------------------------<br>---------------------------------------</p>
+                                <button , onclick="getNumbers(12),getOperator('+'),calculate()">+</button>
+                                <span v-if="product.quantity > 0"></span>
+                                <button , onclick="getNumbers(12),getOperator('-'),calculate()">-</button>
+                                <a href="#confirm"><button class="update">order now</button></a>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/food5.png" alt="ORGANIC FRUIT SALAD">
+                            <div>
+                                <h3>ORGANIC FRUIT SALAD <span class="primary-text"id="price">8.00</span></h3>
+                                <p>---------------------------------------<br>---------------------------------------</p>
+                                <button , onclick="getNumbers(8),getOperator('+'),calculate()">+</button>
+                                <span v-if="product.quantity > 0"></span>
+                                <button , onclick="getNumbers(8),getOperator('-'),calculate()">-</button>
+                                <a href="#confirm"><button class="update">order now</button></a>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/food6.png" alt="CHEESE PIZZA">
+                            <div>
+                                <h3>CHEESE PIZZA <span class="primary-text"id="price">18.00</span></h3>
+                                <p>---------------------------------------<br>---------------------------------------</p>
+                                <button , onclick="getNumbers(18),getOperator('+'),calculate()">+</button>
+                                <span v-if="product.quantity > 0"></span>
+                                <button , onclick="getNumbers(18),getOperator('-'),calculate()">-</button>
+                                <a href="#confirm"><button class="update">order now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-items-right">
+                        <div class="menu-item">
+                            <img src="./img/food7.jpeg" alt="KOFTA MEAT">
+                            <div>
+                                <h3>KOFTA MEAT <span class="primary-text"id="price">40.00</span></h3>
+                                <p>---------------------------------------<br>---------------------------------------</p>
+                                <button , onclick="getNumbers(40),getOperator('+'),calculate()">+</button>
+                                <span v-if="product.quantity > 0"></span>
+                                <button , onclick="getNumbers(40),getOperator('-'),calculate()">-</button>
+                                <a href="#confirm"><button class="update">order now</button></a>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/food9.jpeg" alt="CHEESE TOST">
+                            <div>
+                                <h3>CHEESE TOST <span class="primary-text"id="price">6.00</span></h3>
+                                <p>---------------------------------------<br>---------------------------------------</p>
+                                <button , onclick="getNumbers(6),getOperator('+'),calculate()">+</button>
+                                <span v-if="product.quantity > 0"></span>
+                                <button , onclick="getNumbers(6),getOperator('-'),calculate()">-</button>
+                                <a href="#confirm"><button class="update">order now</button></a>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/food10.jpeg" alt="FRUIT SALAD">
+                            <div>
+                                <h3>FRUIT SALAD <span class="primary-text"id="price">14.00</span></h3>
+                                <p>---------------------------------------<br>--------------------------------------</p>
+                                <button , onclick="getNumbers(14),getOperator('+'),calculate()">+</button>
+                                <span v-if="product.quantity > 0"></span>
+                                <button , onclick="getNumbers(14),getOperator('-'),calculate()">-</button>
+                                <a href="#confirm"><button class="update">order now</button></a>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="./img/food11.jpeg" alt="CHICKEN SHAWARMA">
+                        
+                                <div>
+                                <h3>CHICKEN SHAWARMA <span class="primary-text" id="price">20.00</span></h3>
+                                <p>---------------------------------------<br>---------------------------------------</p>
+                                <button , onclick="getNumbers(20),getOperator('+'),calculate()">+</button>
+                                <span v-if="product.quantity > 0"></span>
+                                <button , onclick="getNumbers(20),getOperator('-'),calculate()">-</button>
+                                <a href="#confirm"><button class="update">order now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            
+        </section>
+        <hr><hr><hr>
+        <section id="offers">
+            <div class="container">
+                <div class="title">
+                    <h2>Our Special Offers</h2>
+                </div>
+                <div class="offers-items">
+                    <div>
+                        <img src="./img/offer1.png" alt="Quattro Pasta">
+                        <div>
+                            <h3>Quattro Pasta</h3>
+                            <p>---------------------------------------------------</p>
+                            <del> 55.00</del> <span class="primary-text"id="price">18.00</span>
+                            <button , onclick="getNumbers(18),getOperator('+'),calculate()">+</button>
+                            <span v-if="product.quantity > 0"></span>
+                            <button , onclick="getNumbers(18),getOperator('-'),calculate()">-</button><br>
+                           <a href="menu.html#confirm"><button class="update">order now</button></a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./img/offer2.png" alt="Vegertarian Pasta">
+                        <div>
+                            <h3>Vegertarian Pasta</h3>
+                            <p>---------------------------------------------------</p>
+                            <div v-for="meal in meals" :key="meal.id" class="meal"></div>
+                            <del> 55.00</del> <span class="primary-text"id="price">18.00</span>
+                            <button , onclick="getNumbers(18),getOperator('+'),calculate()">+</button>
+                            <span v-if="product.quantity > 0"></span>
+                            <button , onclick="getNumbers(18),getOperator('-'),calculate()">-</button><br>
+                            <a href="menu.html#confirm"><button class="update">order now</button></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Menu Section End -->
+    <div id="confirm">
+        <h3 style="color:chocolate ;font-size: 25px">The Total Price</h3>
+        <input id="screen" type="number"/>
+        <br>
+        <button onclick="window.location.reload()">delete</button>
+        <br>
+        <a href="bookt.php"><button> pay </button></a>
+        </div>
+    </section>
+    
+      </header>
+      <script>
+
+var screen = document.getElementById("screen");
+        var values = { prev: null, new: null, total: null };
+        var operType = null;
+
+        function getNumbers(num) {
+            screen.value = num;
+            if (values.prev) {
+                values.new = num;
+            } else {
+                values.prev = num;
+            }
+        }
+
+        function getOperator(oper) {
+            operType = oper;
+        }
+
+        function calculate() {
+            if (!values.new) {
+                return;
+            }
+
+            if (values.new !== null && values.prev !== null && operType) {
+                if (operType === '+') {
+                    values.total = values.prev + values.new;
+                    screen.value = values.total;
+                    values.prev = values.total;
+                    values.new = null;
+                } else if (operType === '-') {
+                    if(values.new<=values.prev)
+                    values.total = values.prev - values.new;
+                    values.prev = values.total;
+                    screen.value = values.prev;
+                    
+                    
+                  if(values.total==0)
+                  {
+                      
+                    
+                        
+                        
+                        window.location.reload();
+                }
+                  }
+            }
+        }
+
+    
+
+            
+    </script>
+</body>
+</html>

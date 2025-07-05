@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Lover</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+<?php session_start();
+
+$name=$_SESSION['email']
+?>
+    <!-- Header Start -->
+    <header>
+        <div id="navbar">
+            <h1>WILD GINGER</h1>
+            <nav role="navigation">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.php">Gallery</a></li>
+                    <li><a href="aftersign.php"><?php echo $name;?></a></li>
+                    <li><a href="logout.php">Log Out</a></li>
+                    
+                
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Welcome To <span class="primary-text"> Wild Genger </span> Restaurant</h1>
+            <p>Here you can find Most delicious food in the world</p>
+            <div class="button">
+            <a href="bookt.php" class="btn btn-primary">Book a Table</a>
+            <a href="#offers" class="btn btn-primary">see our offers</a>
+            </div>
+        </div>
+    </header>
+    
+        <div class="offerhome">
+        <!-- Offers Section Start -->
+        <section id="offers">
+            <div class="container">
+                <div class="title">
+                    <h2>Our Special Offers</h2>
+                </div>
+                <div class="offers-items">
+                    <div>
+                        <img src="./img/offer1.png" alt="Quattro Pasta">
+                        <div>
+                            <h3>Quattro Pasta</h3>
+                            <p>                                             </p>
+                            <span class="primary-text"id="price"><del> 55.00</del><br> 18.00</span>
+                           <a href="menu.html#confirm"><button class="update">order now</button></a>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./img/offer2.png" alt="Vegertarian Pasta">
+                        <div>
+                            <h3>Vegertarian Pasta</h3>
+                            <p>                                             </p>
+                            <span class="primary-text"id="price"><del> 55.00</del><br> 18.00</span>
+                            <a href="menu.html#confirm"><button class="update">order now</button></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <!-- Offers Section End -->
+       
+        <!-- Daytime section start-->
+        <section id="daytime">
+            <div class="container">
+                <div class="daytime-items">
+                    <div class="daytime-item">
+                        <img src="./img/breckfastIcon.png" alt="Breakfast">
+                        <h3>Breakfast</h3>
+                        <p>8:00 am to 10:00 am</p>
+                    </div>
+                    <div class="daytime-item">
+                        <img src="./img/lunchIcon.png" alt="Lunch">
+                        <h3>Lunch</h3>
+                        <p>4:00 pm to 7:00 pm</p>
+                    </div>
+                    <div class="daytime-item">
+                        <img src="./img/dinnerIcon.png" alt="Dinner">
+                        <h3>Dinner</h3>
+                        <p>9:00 pm to 1:00 Am</p>
+                    </div>
+                    <div class="daytime-item">
+                        <img src="./img/dessertIcon.png" alt="dessert">
+                        <h3>Dessert</h3>
+                        <p>All day</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <footer id="footer">
+        
+    </footer>
+</body>
+
+</html>
