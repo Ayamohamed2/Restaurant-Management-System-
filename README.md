@@ -15,11 +15,12 @@ A backend system built in **PHP** to manage restaurant operations such as user a
 
   * Customers can place orders
   * Orders are seamlessly processed via backend integration
+## 🛠️ Tech Stack
 
-## 💡 Technologies Used
-
-* **PHP** (Core Backend Logic)
-* **MySQL** (Database)
+* **Backend:** PHP
+* **Database:** MySQL
+* **Local Server:** XAMPP
+* **IDE:** Visual Studio Code (VS Code)
 
 ## 🛡️ Validation
 
@@ -27,7 +28,3 @@ A backend system built in **PHP** to manage restaurant operations such as user a
 
   * Duplicate registrations
   * Invalid credentials
-
-
-
-لو عايز أضيف لك ملف `README.md` جاهز للتحميل أو التعديل، ابعتلي ملفات المشروع أو قولّي أعملك إيه تاني فيه.
